@@ -1,0 +1,229 @@
+@use "variables";
+
+.main-container {
+  border: 1px solid rgb(253, 0, 0);
+  width: 100vw;
+  margin: 0 auto;
+  background-color: variables.$App-background-greyish;
+}
+
+.purple-box {
+  position: relative;
+  height: 65vh;
+  width: 50%;
+  background-image: linear-gradient(variables.$Magenta-gradient,
+      variables.$Violet-gradient);
+  border-radius: 0 0 100% 0;
+}
+
+.phone {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 63px;
+  top: 63px;
+  width: 247px;
+  height: 31.75rem;
+  background-color: variables.$App-background-greyish;
+  border-radius: 30px;
+  border: 10px solid white;
+
+  .header {
+    justify-content: space-around;
+    background-image: linear-gradient(to right,
+        variables.$Violet-gradient,
+        variables.$Magenta-gradient);
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    height: 66px;
+    position: relative;
+
+    .white-box {
+      position: absolute;
+      width: 60%;
+      border-radius: 0 0 15px 15px;
+      height: 19px;
+      background-color: white;
+      z-index: 10;
+      top: 0;
+    }
+
+    .user {
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      gap: 0.5rem;
+      line-height: 0.8rem;
+    }
+
+    .menu {
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      font-size: 0.6rem;
+    }
+
+    i {
+      color: white;
+    }
+
+    img {
+      width: 25px;
+      border-radius: 100%;
+      border: 1px solid white;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+      color: white;
+      font-weight: 400;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h4 {
+      font-size: 0.5rem;
+      color: hsl(276, 100%, 81%);
+      font-weight: 400;
+    }
+  }
+
+  .phone-body {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .walker {
+      border-radius: 8px 8px 8px 0px;
+      margin-left: 0.5rem;
+      color: hsl(276, 26%, 57%);
+      background-color: hsl(277, 33%, 92%);
+      max-width: 60%;
+      padding: 0.4rem;
+    }
+
+    .customer {
+      border-radius: 8px 8px 0px 8px;
+      background-color: white;
+      align-self: flex-end;
+      max-width: 60%;
+      margin-right: 0.5rem;
+      padding: 0.4rem;
+      color: hsl(271, 15%, 43%);
+    }
+
+    .images-container {
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 0.5rem;
+      gap: 0.5rem;
+
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    .last {
+      margin-bottom: 0.7rem;
+    }
+
+    .price-info {
+      margin-left: 0.5rem;
+      color: white;
+      background-image: linear-gradient(to left,
+          variables.$Violet-gradient,
+          variables.$Magenta-gradient);
+      width: 69%;
+      height: 32px;
+      border-radius: 8px 8px 8px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .price {
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        gap: 0.5rem;
+
+        .circle {
+          border-radius: 10px;
+          border: 1px solid white;
+          opacity: 0.2;
+          width: 13px;
+          height: 13px;
+        }
+
+        .price-text {
+          font-size: 0.5rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .footer-phone {
+    margin: 1rem 0.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    .send {
+      width: 88%;
+      padding-left: 1rem;
+      font-size: 0.6rem;
+      color: rgba(167, 166, 166, 0.608);
+    }
+
+    i {
+      padding-top: 0.2rem;
+      height: 32px;
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 0.55rem;
+    font-weight: 400;
+  }
+
+  
+}
+
+.text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9.5rem ;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: hsl(271, 36%, 24%);
+    }
+
+    .text-section{
+      padding: 1.5rem 2.6rem 4rem 2.6rem;
+      color: hsl(270, 7%, 64%);
+      line-height: 2rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+  }
