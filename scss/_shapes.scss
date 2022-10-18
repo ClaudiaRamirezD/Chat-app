@@ -1,7 +1,6 @@
 @use "variables";
 
 .main-container {
-  border: 1px solid rgb(253, 0, 0);
   width: 100vw;
   margin: 0 auto;
   background-color: variables.$App-background-greyish;
@@ -20,8 +19,11 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 63px;
-  top: 63px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 63px auto;
   width: 247px;
   height: 31.75rem;
   background-color: variables.$App-background-greyish;
