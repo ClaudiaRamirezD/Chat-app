@@ -223,7 +223,7 @@ img {
     border-radius: 0px 0px 50% 50%;
   }
   .phone {
-    left: 25%;
+    left: 20%;
     top: 168px;
     margin: 0;
   }
@@ -244,14 +244,27 @@ img {
     padding-bottom: 52px;
   }
   .purple-right {
-    top: 143px;
+    top: 163px;
     background-color: rgba(196, 173, 208, 0.095);
     position: absolute;
-    height: 87.5vh;
+    height: 100vh;
     width: 35%;
     right: -203px;
     border-radius: 50% 0 0 0;
     z-index: 0;
+  }
+}
+@media (min-width: 1440px) and (min-height: 800px) {
+  .phone {
+    left: 25%;
+    top: 168px;
+    margin: 0;
+  }
+  .text {
+    padding-left: 45%;
+  }
+  .purple-right {
+    height: 80vh;
   }
 }
 
