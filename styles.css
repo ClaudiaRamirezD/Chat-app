@@ -15,6 +15,7 @@ img {
 }
 
 .main-container {
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   background-color: hsl(270deg, 20%, 96%);
@@ -22,7 +23,7 @@ img {
 
 .purple-box {
   position: relative;
-  height: 65vh;
+  height: 501px;
   width: 50%;
   background-image: linear-gradient(#e942ff, #8838ff);
   border-radius: 0 0 100% 0;
@@ -58,7 +59,7 @@ img {
   height: 19px;
   background-color: white;
   z-index: 10;
-  top: 0;
+  top: -1px;
 }
 .phone .header .user {
   padding-top: 1.5rem;
@@ -207,6 +208,51 @@ img {
   line-height: 2rem;
   font-size: 1rem;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: hsl(270deg, 20%, 96%);
+  }
+  .purple-box {
+    position: absolute;
+    height: 87.5vh;
+    width: 35%;
+    left: -8.5rem;
+    top: 0;
+    border-radius: 0px 0px 50% 50%;
+  }
+  .phone {
+    left: 25%;
+    top: 168px;
+    margin: 0;
+  }
+  .text {
+    width: 85%;
+    padding-left: 51%;
+    padding-top: 20rem;
+    align-items: flex-start;
+    z-index: 3;
+  }
+  .text .text-section {
+    text-align: start;
+    align-items: flex-start;
+    padding: 0;
+    z-index: 3;
+  }
+  .text h1 {
+    padding-bottom: 52px;
+  }
+  .purple-right {
+    top: 143px;
+    background-color: rgba(196, 173, 208, 0.095);
+    position: absolute;
+    height: 87.5vh;
+    width: 35%;
+    right: -203px;
+    border-radius: 50% 0 0 0;
+    z-index: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 @use "variables";
 
 .main-container {
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   background-color: variables.$App-background-greyish;
@@ -8,12 +9,14 @@
 
 .purple-box {
   position: relative;
-  height: 65vh;
+  height: 501px;
   width: 50%;
   background-image: linear-gradient(variables.$Magenta-gradient,
       variables.$Violet-gradient);
   border-radius: 0 0 100% 0;
 }
+
+
 
 .phone {
   position: absolute;
@@ -47,7 +50,7 @@
       height: 19px;
       background-color: white;
       z-index: 10;
-      top: 0;
+      top: -1px;
     }
 
     .user {
@@ -204,28 +207,85 @@
     font-weight: 400;
   }
 
-  
+
 }
 
 .text {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 9.5rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9.5rem;
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 500;
-      color: hsl(271, 36%, 24%);
-    }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+  }
 
-    .text-section{
-      padding: 1.5rem 2.6rem 4rem 2.6rem;
-      color: hsl(270, 7%, 64%);
-      line-height: 2rem;
-      font-size: 1rem;
-      text-align: center;
-    }
+  .text-section {
+    padding: 1.5rem 2.6rem 4rem 2.6rem;
+    color: hsl(270, 7%, 64%);
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
+
+@media(min-width:800px) {
+
+  body {
+    background-color: variables.$App-background-greyish;
+  }
+
+  .purple-box {
+    position: absolute;
+    height: 87.5vh;
+    width: 35%;
+    left: -8.5rem;
+    top: 0;
+    border-radius: 0px 0px 50% 50%;
 
   }
+
+  .phone {
+    left: 25%;
+    top: 168px;
+    margin: 0;
+  }
+
+  .text {
+    width: 85%;
+    padding-left: 51%;
+    padding-top: 20rem;
+    align-items: flex-start;
+    z-index: 3;
+
+    .text-section {
+      text-align: start;
+      align-items: flex-start;
+      padding: 0;
+      z-index: 3;
+    }
+
+    h1 {
+      padding-bottom: 52px
+    }
+  }
+
+  .purple-right {
+    top: 143px;
+    background-color: rgba(196, 173, 208, 0.095);
+    position: absolute;
+    height: 87.5vh;
+    width: 35%;
+    right: -203px;
+    border-radius: 50% 0 0 0;
+    z-index: 0;
+}
+
+
+
+
+}
