@@ -233,7 +233,7 @@
 
 }
 
-@media(min-width:800px) {
+@media(min-width:800px) and (min-height:500px)  {
 
   body {
     background-color: variables.$App-background-greyish;
